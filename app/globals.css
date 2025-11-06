@@ -1,0 +1,15 @@
+:root { --bg:#0b1220; --card:#111a2b; --muted:#7d8aa6; --accent:#5eead4; --text:#e6edf3; }
+* { box-sizing:border-box; }
+html,body{ padding:0; margin:0; background:var(--bg); color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+.container{ max-width:960px; margin:0 auto; padding:24px; }
+.tabs{ display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+.tab{ padding:10px 14px; border-radius:10px; background:#0f1524; border:1px solid #1f2b45; cursor:pointer; }
+.tab.active{ outline:2px solid var(--accent); }
+.card{ background:var(--card); border:1px solid #20314f; padding:16px; border-radius:16px; }
+.row{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+input,select,button{ background:#0f1524; color:var(--text); border:1px solid #223352; padding:10px 12px; border-radius:10px; }
+button{ cursor:pointer; }
+.mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; }
+.small{ color:var(--muted); font-size:12px; }
+.spinner{ width:16px; height:16px; border:2px solid var(--muted); border-top-color:transparent; border-radius:50%; animation:spin .8s linear infinite; display:inline-block; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
